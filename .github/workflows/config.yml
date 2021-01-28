@@ -42,7 +42,7 @@ jobs:
            ls
            cd source
            docker container prune --force
-           docker build . -t reconrex
+           docker build . -t Doombringer
        - name: running Docker
          timeout-minutes: 340
          continue-on-error: true
