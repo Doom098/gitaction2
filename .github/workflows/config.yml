@@ -16,7 +16,7 @@ jobs:
        - name: initialization
          continue-on-error: true
          run: |
-           docker rmi docker images -q
+           docker rmi `docker images -q`
            git config --global user.name "Doom098"
            git config --global user.email "21doombringer@gmail.com"
            sudo -E apt-get clean 
