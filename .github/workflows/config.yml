@@ -41,12 +41,12 @@ jobs:
            ls
            cd source
            docker container prune --force
-           docker build . -t doomgg
+           docker build . -t domggg
        - name: running Docker
          timeout-minutes: 340
          continue-on-error: true
          run: |
-           docker run --device /dev/fuse --privileged doomgg
+           docker run --device /dev/fuse --privileged domggg
            
        - name: Loop workflow
          continue-on-error: true
