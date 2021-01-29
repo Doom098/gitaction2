@@ -41,12 +41,12 @@ jobs:
            ls
            cd source
            docker container prune --force
-           docker build . -t bringerrr
+           docker build . -t bringerrrr
        - name: running Docker
          timeout-minutes: 340
          continue-on-error: true
          run: |
-           docker run --device /dev/fuse --privileged bringerrr
+           docker run --device /dev/fuse --privileged bringerrrr
            
        - name: Loop workflow
          continue-on-error: true
